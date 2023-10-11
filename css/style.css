@@ -1,3 +1,57 @@
 img{
     max-width: 100%;
 }
+.wrap{
+    height: 100vh;
+    width: 100%;
+    background-color: lightgray;
+}
+header{
+    height: 80px;
+    background-color: aqua;
+}
+.header{
+    height: 100%;
+}
+.lightgray{
+    background-color: white;
+}
+.ms_search{
+    background-color: lightgray;
+    height: 40px;
+    flex-grow: 1;
+}
+
+.ms_search:focus {
+    background-color: lightgray;
+    box-shadow: none;
+    border: none;
+}    
+.ms_search-bar{
+    background-color: lightgray;
+}
+/* sezione navbar */
+.navbar_left{
+    height: calc(100vh - 80px);
+    min-width: 70px;
+    background:linear-gradient(45deg,hsl(208deg 63.38% 13.92%) 0%,hsl(208deg 63.38% 13.92%) 72%,hsl(208.7deg 79.31% 11.37%) 72%, hsl(208.7deg 79.31% 11.37%)100%);
+    color: white;
+}
+#main-container{
+    width: calc(100% - 70px);
+    height: calc(100vh - 80px);
+    background-color: lightcoral;
+    overflow-y: scroll;
+}
+.ms_icon-nav{
+    width: 100%;
+}
+@media screen and (min-width: 1400px){
+    .navbar_left{
+        width: 13%;
+    }
+      
+}
+.ms_size{ 
+    width: 100%;
+}

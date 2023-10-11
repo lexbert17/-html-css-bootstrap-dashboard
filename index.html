@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
@@ -8,6 +9,69 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
+    <div class="wrap">
+        <header>
+            <nav class="navbar navbar-expand-lg bg-light">
+                <!-- contenitore header  -->
+                <div class="container-fluid lightgray">
+                    <!-- logo  -->
+                    <a class="navbar-brand" href="#">
+                        <img class="d-xl-none" src="img/mobile-logo.png" width="60" height="60">
+                        <img class="d-none d-xl-block" src="img/logo.svg" width="150" height="60">
+                        
+                    </a>
+                    <div class="ms_search d-flex">
+                        <button type="button" class="btn  ps-4"><i class="fa-solid fa-magnifying-glass fa-lg" style="color: #494a4b;"></i></button>
+                        <input class="form-control me-2 ms_search" type="search" placeholder="Search" aria-label="Search">
+                    </div>
+
+                    <div class="d-none d-xl-block">
+                        <button type="button" class="btn  p-0 mx-3 "><i class="fa-solid fa-list fa-lg" style="color: #2b2d31;"></i></button>
+                        <button type="button" class="btn  p-0 mx-3 "><i class="fa-solid fa-circle-question fa-lg" style="color: #4f5154;"></i></button>
+                        <button type="button" class="btn  p-0 mx-3 "><i class="fa-solid fa-ellipsis-vertical fa-lg" style="color: #45474a;"></i></button>
+                    </div>
+
+                    <button type="button" class="btn  p-0 mx-3 "><i class="fa-solid fa-bell fa-xl" style="color: #f4b11f;"></i></button>
+  
+                  
+                  
+                </div>
+            </nav>
+        </header>      
+        <section class="boh d-flex ">
+
+            <!-- navbar  -->
+            <nav class="navbar_left d-flex flex-column justify-content-between" >
+                <!-- home  -->
+                <div class="d-flex flex-column pt-4 ms_size gap-2 ms_icon-nav">
+                    <div class="d-flex justify-content-center py-1">
+                        <button type="button" class="btn d-flex "><i class="fa-solid fa-house fa-lg" style="color: #ffffff;"></i> </button>
+                        <span class="d-none d-xl-block">Home</span>
+                    </div>   
+                    <!-- Stats -->
+                    <div class="d-flex justify-content-center py-1">
+                        <button type="button" class="btn d-flex  "><i class="fa-solid fa-chart-simple fa-lg" style="color: #ffffff;"></i></button>
+                         <span class="d-none d-xl-block">Stats</span>
+                    </div> 
+                    <!-- Signals -->
+                    <div class="d-flex justify-content-center py-1">
+                        <button type="button" class="btn d-flex "><i class="fa-solid fa-signal fa-lg" style="color: #ffffff;"></i></button>
+                        <span class="d-none d-xl-block">Signals</span>
+                    </div>  
+                </div> 
+
+                <!-- admin  -->
+                <div class="d-flex justify-content-center pb-3">
+                    <button type="button" class="btn d-flex "><i class="fa-solid fa-gear fa-lg" style="color: #ffffff;"></i></button>
+                    <span class="d-none d-xl-block">Admin</span>
+                </div>                  
+            </nav>
+
+            <main id="main-container">
+                      
+            </main>
+        </section>
+
+    </div>
 </body>
 </html>
