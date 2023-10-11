@@ -37,24 +37,25 @@
                   
                 </div>
             </nav>
-        </header>      
-        <section class="boh d-flex ">
+        </header> 
+        <!-- contenitore grandissimo      -->
+        <section class="d-flex">
 
             <!-- navbar  -->
-            <nav class="navbar_left d-flex flex-column justify-content-between" >
+            <nav class="navbar_left d-flex flex-column justify-content-between pt-2" >
                 <!-- home  -->
                 <div class="d-flex flex-column pt-4 ms_size gap-2 ms_icon-nav">
-                    <div class="d-flex justify-content-center py-1">
+                    <div class="d-flex justify-content-center py-1 mb-2">
                         <button type="button" class="btn d-flex "><i class="fa-solid fa-house fa-lg" style="color: #ffffff;"></i> </button>
                         <span class="d-none d-xl-block">Home</span>
                     </div>   
                     <!-- Stats -->
-                    <div class="d-flex justify-content-center py-1">
+                    <div class="d-flex justify-content-center py-1 mb-2">
                         <button type="button" class="btn d-flex  "><i class="fa-solid fa-chart-simple fa-lg" style="color: #ffffff;"></i></button>
                          <span class="d-none d-xl-block">Stats</span>
                     </div> 
                     <!-- Signals -->
-                    <div class="d-flex justify-content-center py-1">
+                    <div class="d-flex justify-content-center py-1 mb-2">
                         <button type="button" class="btn d-flex "><i class="fa-solid fa-signal fa-lg" style="color: #ffffff;"></i></button>
                         <span class="d-none d-xl-block">Signals</span>
                     </div>  
@@ -68,9 +69,76 @@
             </nav>
 
             <main id="main-container">
-                      
+
+                <!-- sezione studente  -->
+                <div class="container-fluid boolean d-flex flex-column white flex-md-row justify-content-md-between ">
+                    <!-- nuovo studente  -->
+                    <div class="mt-4 d-flex new-student order-md-3">
+                        <span class="me-3 align-self-center align-self-md-middle">Nuovo Studente</span>
+                        <div class="big-plus align-self-md-start"><a href=""><i class="fa-solid fa-plus fa-lg" style="color: #ffffff;"></i></a></div>
+                    </div>
+                    <!-- boolean  -->
+                    <div class="mt-4">
+                        <div class="d-flex">
+                            <h2 class="me-2">Boolean</h2>
+                            <button type="button" class="blaze align-self-center white " >Piano blaze</button>
+                        </div>    
+                        <div>   
+                            <button type="button" class="blaze align-self-center white" >3 app</button> 
+                            <span><i class="fa-solid fa-angles-right fa-sm" style="color: #ffffff;"></i></span>
+                            <button type="button" class="blaze align-self-center white mini-plus" ><i class="fa-solid fa-plus fa-xs" style="color: #ffffff;"></i></button> 
+                        </div>    
+                    </div>
+                    <!-- studenti online -->
+                    <div class="my-4">
+                        <span class="me-3 align-self-center">studenti online negli ultimi 30 minuti</span>
+                        <h2>125</h2>
+                    </div>
+                </div>
+
+                <!-- contenitore prossime classi e faq  -->
+                <section class="next-class-faq">
+                    <!-- prossime classi  -->
+                    <div class="next-class  border border-secondary m-2  ">
+                        <h2 class="tab-title p-2">Prossime classi</h2>
+                        <table class="table">
+                            <thead>
+                              <tr >
+                                <th class="fw-normal" scope="col">Nome</th>
+                                <th class="fw-normal" scope="col">Data inizio</th>
+                                <th class="fw-normal" scope="col">ROI</th>
+                                <th class="fw-normal" scope="col">Azioni</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <th class="fw-normal" scope="row">
+                                    <img src="img/" alt=""></th>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td>@mdo</td>
+                              </tr>
+                              <tr>
+                                <th class="fw-normal" scope="row">2</th>
+                                <td>Jacob</td>
+                                <td>Thornton</td>
+                                <td>@fat</td>
+                              </tr>
+                              <tr>
+                                <th class="fw-normal" scope="row">3</th>
+                                <td colspan="2">Larry the Bird</td>
+                                <td>@twitter</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                    </div>
+                </section>
+
+
             </main>
         </section>
+
+        
 
     </div>
 </body>

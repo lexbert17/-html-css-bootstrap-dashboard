@@ -1,10 +1,17 @@
+:root{
+    --primary-color: lightgray;
+    --boolean-color-botton:hsl(214.76deg 78.85% 40.78%);
+}
 img{
     max-width: 100%;
+}
+.white{
+    color: white;
 }
 .wrap{
     height: 100vh;
     width: 100%;
-    background-color: lightgray;
+    background-color: var(--primary-color);
 }
 header{
     height: 80px;
@@ -17,18 +24,18 @@ header{
     background-color: white;
 }
 .ms_search{
-    background-color: lightgray;
+    background-color: var(--primary-color);
     height: 40px;
     flex-grow: 1;
 }
 
 .ms_search:focus {
-    background-color: lightgray;
+    background-color: var(--primary-color);
     box-shadow: none;
     border: none;
 }    
 .ms_search-bar{
-    background-color: lightgray;
+    background-color: var(--primary-color);
 }
 /* sezione navbar */
 .navbar_left{
@@ -54,4 +61,38 @@ header{
 }
 .ms_size{ 
     width: 100%;
+}
+
+/* sezione main  */
+
+.boolean{
+    background-color: hsl(214.88deg 81.53% 51.18%);
+}
+.new-student{
+    height: 35px;
+}
+.big-plus{
+    height: 35px;
+    line-height: 35px;
+    width: 40px;
+    text-align: center;
+    border: 1px solid white;
+    border-radius: 5px;  
+}
+.blaze{
+border-radius: 30px;
+padding: 0 10px;
+font-size: .8rem;
+background-color:hsl(214.76deg 78.85% 40.78%) ;
+border: none;
+}
+.mini-plus{
+    border-radius: 50%;
+    padding: 2px 8px;
+}
+
+/* prossime classi */
+.tab-title{
+    background-color: var(--primary-color);
+    border-bottom: 1px solid gray;
 }
