@@ -96,3 +96,29 @@ border: none;
     background-color: var(--primary-color);
     border-bottom: 1px solid gray;
 }
+.avatar-size{
+   max-width:  40px;
+}
+.gray{
+    border-color: gray;
+}
+.ms_radius{
+    border-radius: 10px;
+}
+.process{
+    background-color: hsl(44.7deg 100% 51.57%);
+    border-color:  hsl(44.7deg 100% 51.57%);
+}
+.process:first-child:active{
+    background-color: hsl(44.7deg 100% 51.57%);
+    border-color:  hsl(44.7deg 100% 51.57%);
+}
+.process:hover {
+    background-color: hsl(44.7deg 100% 51.57%);
+    border-color:  hsl(44.7deg 100% 51.57%);
+}
+.process:focus-visible {
+    background-color: hsl(44.7deg 100% 51.57%);
+    box-shadow: none;
+    border-color:  hsl(44.7deg 100% 51.57%);
+}
