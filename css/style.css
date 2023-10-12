@@ -1,31 +1,42 @@
 :root{
-    --primary-color: lightgray;
+    --primary-color: hsl(0deg 0% 96.86%);
     --boolean-color-botton:hsl(214.76deg 78.85% 40.78%);
 }
-img{
-    max-width: 100%;
-}
+/* elementi in comune */
 .white{
     color: white;
 }
+.ms_bg-white{
+    background-color: white;
+}
+
+.ms_radius{
+    border-radius: 5px;
+}
+
+/* /elementi in comune  */
+
+img{
+    max-width: 100%;
+}
+/* contenitore della pagina */
 .wrap{
     height: 100vh;
     width: 100%;
-    background-color: var(--primary-color);
+    background-color: hsl(210deg 16.67% 97.65%);
 }
+/* sezione header  */
 header{
     height: 80px;
-    background-color: aqua;
 }
-.header{
-    height: 100%;
+
+.ms_mobile{
+    min-width:1rem;
 }
-.lightgray{
-    background-color: white;
-}
+
 .ms_search{
     background-color: var(--primary-color);
-    height: 40px;
+    height: 40px;  
     flex-grow: 1;
 }
 
@@ -37,34 +48,59 @@ header{
 .ms_search-bar{
     background-color: var(--primary-color);
 }
+
+.bonus{
+    position: relative;
+}
+
+.ms_group{
+    width: 150px;
+    list-style: none;
+    position:absolute;
+    right: 35px;
+    display: none;  
+}
+
+.bonus:focus .ms_group{
+    display: block;
+}
+
+.bonus:active .ms_group{
+    display: block;   
+}
+
 /* sezione navbar */
+
 .navbar_left{
     height: calc(100vh - 80px);
     min-width: 70px;
     background:linear-gradient(45deg,hsl(208deg 63.38% 13.92%) 0%,hsl(208deg 63.38% 13.92%) 72%,hsl(208.7deg 79.31% 11.37%) 72%, hsl(208.7deg 79.31% 11.37%)100%);
-    color: white;
 }
+
 #main-container{
     width: calc(100% - 70px);
     height: calc(100vh - 80px);
-    background-color: lightcoral;
     overflow-y: scroll;
 }
 .ms_icon-nav{
     width: 100%;
 }
+
 @media screen and (min-width: 1400px){
     .navbar_left{
-        width: 13%;
+        width: 10%;
     }
-      
+    #main-container{
+        width:calc(100% - 10%)
+    }    
 }
+
 .ms_size{ 
     width: 100%;
 }
+/* parte main  */
 
-/* sezione main  */
-
+/* sezione boolean  */
 .boolean{
     background-color: hsl(214.88deg 81.53% 51.18%);
 }
@@ -75,9 +111,8 @@ header{
     height: 35px;
     line-height: 35px;
     width: 40px;
-    text-align: center;
     border: 1px solid white;
-    border-radius: 5px;  
+
 }
 .blaze{
 border-radius: 30px;
@@ -94,31 +129,44 @@ border: none;
 /* prossime classi */
 .tab-title{
     background-color: var(--primary-color);
-    border-bottom: 1px solid gray;
 }
+
 .avatar-size{
    max-width:  40px;
 }
-.gray{
+
+.ms_gray{
     border-color: gray;
 }
-.ms_radius{
-    border-radius: 5px;
-}
+
 .process{
     background-color: hsl(44.7deg 100% 51.57%);
     border-color:  hsl(44.7deg 100% 51.57%);
 }
+
 .process:first-child:active{
     background-color: hsl(44.7deg 100% 51.57%);
     border-color:  hsl(44.7deg 100% 51.57%);
 }
+
 .process:hover {
     background-color: hsl(44.7deg 100% 51.57%);
     border-color:  hsl(44.7deg 100% 51.57%);
 }
+
 .process:focus-visible {
     background-color: hsl(44.7deg 100% 51.57%);
     box-shadow: none;
     border-color:  hsl(44.7deg 100% 51.57%);
+}
+
+/* todo  */
+.ms_todo{
+    border-bottom: 1px solid gray;  
+}
+
+/* grafico */
+.ms_mini-text{
+    font-size: .8rem;
+    letter-spacing: -1px
 }

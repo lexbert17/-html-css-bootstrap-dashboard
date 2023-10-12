@@ -7,63 +7,67 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
+</head> 
+<body>  white
     <div class="wrap">
         <header>
             <nav class="navbar navbar-expand-lg bg-light">
                 <!-- contenitore header  -->
-                <div class="container-fluid lightgray">
-                    <!-- logo  -->
-                    <a class="navbar-brand" href="#">
-                        <img class="d-xl-none" src="img/mobile-logo.png" width="60" height="60">
-                        <img class="d-none d-xl-block" src="img/logo.svg" width="150" height="60">
-                        
-                    </a>
+                <div class="container-fluid ms_bg-white d-flex flex-nowrap ">
+                    <!-- logo  -->             
+                        <a class="navbar-brand" href="#">
+                            <img class="d-xl-none ms_mobile" src="img/mobile-logo.png" width="60" height="60" alt="img">
+                            <img class="d-none d-xl-block " src="img/logo.svg" width="120" height="60" alt="img">           
+                        </a>
+                    <!-- barra di ricerca -->
                     <div class="ms_search d-flex">
                         <button type="button" class="btn  ps-4"><i class="fa-solid fa-magnifying-glass fa-lg" style="color: #494a4b;"></i></button>
-                        <input class="form-control me-2 ms_search" type="search" placeholder="Search" aria-label="Search">
+                        <input class="form-control me-2 ms_search hey" type="search" placeholder="Search" aria-label="Search">
                     </div>
-
-                    <div class="d-none d-xl-block">
-                        <button type="button" class="btn  p-0 mx-3 "><i class="fa-solid fa-list fa-lg" style="color: #2b2d31;"></i></button>
-                        <button type="button" class="btn  p-0 mx-3 "><i class="fa-solid fa-circle-question fa-lg" style="color: #4f5154;"></i></button>
-                        <button type="button" class="btn  p-0 mx-3 "><i class="fa-solid fa-ellipsis-vertical fa-lg" style="color: #45474a;"></i></button>
-                    </div>
-
-                    <button type="button" class="btn  p-0 mx-3 "><i class="fa-solid fa-bell fa-xl" style="color: #f4b11f;"></i></button>
-  
-                  
-                  
+                    <!-- bottoni schermo desktop  -->
+                    <div class="d-flex ">
+                        <button type="button" class="btn d-none d-xl-block p-0 mx-3 "><i class="fa-solid fa-list fa-lg" style="color: #2b2d31;"></i></button>
+                        <button type="button" class="btn d-none d-xl-block p-0 mx-3 "><i class="fa-solid fa-circle-question fa-lg" style="color: #4f5154;"></i></button>
+                        <button type="button" class="btn d-none d-xl-block p-0 mx-3 "><i class="fa-solid fa-ellipsis-vertical fa-lg" style="color: #45474a;"></i></button>
+                        <div class="bonus ">
+                            <!-- campanella -->
+                            <button type="button" class="btn d-block p-0 mx-3 ms_bell"><i class="fa-solid fa-bell fa-xl" style="color: #f4b11f;"></i></button>
+                            <ul class="ms_group ms_bg-white ps-3">
+                                <li>Profilo</li>
+                                <li>Fatturazione</li>
+                                <li>Logout</li>
+                            </ul>
+                        </div>    
+                    </div>              
                 </div>
             </nav>
         </header> 
         <!-- contenitore grandissimo      -->
-        <section class="d-flex">
+        <div class="d-flex">
 
             <!-- navbar  -->
-            <nav class="navbar_left d-flex flex-column justify-content-between pt-2" >
+            <nav class="navbar_left white d-flex flex-column justify-content-between pt-2" >
                 <!-- home  -->
                 <div class="d-flex flex-column pt-4 ms_size gap-2 ms_icon-nav">
                     <div class="d-flex justify-content-center py-1 mb-2">
-                        <button type="button" class="btn d-flex "><i class="fa-solid fa-house fa-lg" style="color: #ffffff;"></i> </button>
+                        <button type="button" class="btn d-flex ps-0"><i class="fa-solid fa-house fa-lg" style="color: #ffffff;"></i> </button>
                         <span class="d-none d-xl-block">Home</span>
                     </div>   
                     <!-- Stats -->
                     <div class="d-flex justify-content-center py-1 mb-2">
-                        <button type="button" class="btn d-flex  "><i class="fa-solid fa-chart-simple fa-lg" style="color: #ffffff;"></i></button>
+                        <button type="button" class="btn d-flex ps-0 "><i class="fa-solid fa-chart-simple fa-lg" style="color: #ffffff;"></i></button>
                          <span class="d-none d-xl-block">Stats</span>
                     </div> 
                     <!-- Signals -->
                     <div class="d-flex justify-content-center py-1 mb-2">
-                        <button type="button" class="btn d-flex "><i class="fa-solid fa-signal fa-lg" style="color: #ffffff;"></i></button>
+                        <button type="button" class="btn d-flex ps-0 "><i class="fa-solid fa-signal fa-lg" style="color: #ffffff;"></i></button>
                         <span class="d-none d-xl-block">Signals</span>
                     </div>  
                 </div> 
 
                 <!-- admin  -->
-                <div class="d-flex justify-content-center pb-3">
-                    <button type="button" class="btn d-flex "><i class="fa-solid fa-gear fa-lg" style="color: #ffffff;"></i></button>
+                <div class="d-flex justify-content-center pb-3 align-items-center">
+                    <button type="button" class="btn d-flex ps-0"><i class="fa-solid fa-gear fa-lg" style="color: #ffffff;"></i></button>
                     <span class="d-none d-xl-block">Admin</span>
                 </div>                  
             </nav>
@@ -71,11 +75,12 @@
             <main id="main-container">
 
                 <!-- sezione studente  -->
+
                 <div class="container-fluid boolean d-flex flex-column white flex-md-row justify-content-md-between ">
                     <!-- nuovo studente  -->
                     <div class="mt-4 d-flex new-student order-md-3">
                         <span class="me-3 align-self-center align-self-md-middle">Nuovo Studente</span>
-                        <div class="big-plus align-self-md-start"><a href=""><i class="fa-solid fa-plus fa-lg" style="color: #ffffff;"></i></a></div>
+                        <div classgray  ms_radius align-self-md-start"><a href=""><i class="fa-solid fa-plus fa-lg" style="color: #ffffff;"></i></a></div>
                     </div>
                     <!-- boolean  -->
                     <div class="mt-4">
@@ -96,18 +101,22 @@
                     </div>
                 </div>
 
+
+                <div class="row gx-1">
+
                 <!-- contenitore prossime classi e faq  -->
-                <section class="next-class-faq d-flex flex-column ">
+                <section class="next-class-faq d-flex flex-column col-xl-7">
+
                     <!-- prossime classi  -->
                     <div class="next-class  border border-secondary m-2 mt-3 ms_radius ">
-                        <h2 class="tab-title p-2 ms_radius">Prossime classi</h2>
-                        <table class="table gray mb-5 ms_radius">
+                        <h2 class="tab-title ms_todo p-2 ms_radius">Prossime classi</h2>
+                        <table class="table ms_gray mb-5 ms_radius">
                             <!-- riga sottotitolo -->
                             <thead>
                               <tr >
                                 <th class="fw-normal" scope="col">Nome</th>
-                                <th class="fw-normal ps-3 d-none d-md-block" scope="col">Data inizio</th>
-                                <th class="fw-normal d-none d-md-block" scope="col">ROI</th>
+                                <th class="fw-normal" scope="col"><span class="d-none d-xl-block">Data inizio</span></th>
+                                <th class="fw-normal" scope="col"><span class="d-none d-xl-block">ROI</span></th>
                                 <th class="fw-normal ps-3" scope="col">Stato</th>
                                 <th class="fw-normal ps-4" scope="col">Azioni</th>
                               </tr>
@@ -121,8 +130,8 @@
                                         <span>Classe 75</span>
                                     </div>  
                                 </th>       
-                                <td class="d-none d-md-block">15 Feb 2021</td>
-                                <td class="d-none d-md-block">20%</td>
+                                <td ><span class="d-none d-xl-block">15 Feb 2021</span></td>
+                                <td><span class="d-none d-xl-block">20%</span></td>
                                 <td><button type="button" class="btn btn-success px-2 py-0 ms_radius">Done</button></td>
                                 <td>
                                     <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pen fa-sm" style="color: gray"></i></button>
@@ -137,8 +146,8 @@
                                         <span>Classe 76</span>
                                     </div>  
                                 </th> 
-                                <td class="d-none d-md-block">16 Feb 2021</td>
-                                <td class="d-none d-md-block">20%</td>
+                                <td><span class="d-none d-xl-block">15 Feb 2021</span></td>
+                                <td><span class="d-none d-xl-block">20%</span></td>
                                 <td><button type="button" class="btn btn-success px-2 py-0 ms_radius">Done</button></td>
                                 <td>
                                     <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pen fa-sm" style="color: gray"></i></button>
@@ -153,8 +162,8 @@
                                         <span>Classe 77</span>
                                     </div>  
                                 </th>                         
-                                <td class="d-none d-md-block">17 Feb 2021</td>
-                                <td class="d-none d-md-block">20%</td>
+                                <td><span class="d-none d-xl-block">15 Feb 2021</span></td>
+                                <td><span class="d-none d-xl-block">20%</span></td>
                                 <td><button type="button" class="btn btn-success px-2 py-0 ms_radius process">process</button></td>
                                 <td>
                                     <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pen fa-sm" style="color: gray"></i></button>
@@ -169,8 +178,8 @@
                                         <span>Classe 78</span>
                                     </div>  
                                 </th>                     
-                                <td class="d-none d-md-block">18 Feb 2021</td>
-                                <td class="d-none d-md-block">20%</td>
+                                <td><span class="d-none d-xl-block">15 Feb 2021</span></td>
+                                <td><span class="d-none d-xl-block">20%</span></td>
                                 <td><button type="button" class="btn btn-success px-2 py-0 ms_radius">Done</button></td>
                                 <td>
                                     <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pen fa-sm" style="color: gray"></i></button>
@@ -185,8 +194,8 @@
                                         <span>Classe 79</span>
                                     </div>  
                                 </th>                          
-                                <td class="d-none d-md-block">19 Feb 2021</td>
-                                <td class="d-none d-md-block">20%</td>
+                                <td><span class="d-none d-xl-block">15 Feb 2021</span></td>
+                                <td><span class="d-none d-xl-block">20%</span></td>
                                 <td><button type="button" class="btn btn-danger px-2 py-0 ms_radius">failed</button></td>
                                 <td>
                                     <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pen fa-sm" style="color: gray"></i></button>
@@ -201,8 +210,8 @@
                                         <span>Classe 80</span>
                                     </div>  
                                 </th>                       
-                                <td class="d-none d-md-block">20 Feb 2021</td>
-                                <td class="d-none d-md-block">20%</td>
+                                <td><span class="d-none d-xl-block">15 Feb 2021</span></td>
+                                <td><span class="d-none d-xl-block">20%</span></td>
                                 <td><button type="button" class="btn btn-success px-2 py-0 ms_radius">Done</button></td>
                                 <td>
                                     <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pen fa-sm" style="color: gray"></i></button>
@@ -217,8 +226,8 @@
                                         <span>Classe 81</span>
                                     </div>  
                                 </th>                          
-                                <td class="d-none d-md-block">21 Feb 2021</td>
-                                <td class="d-none d-md-block">20%</td>
+                                <td><span class="d-none d-xl-block">15 Feb 2021</span></td>
+                                <td><span class="d-none d-xl-block">20%</span></td>
                                 <td><button type="button" class="btn btn-danger px-2 py-0 ms_radius">failed</button></td>
                                 <td>
                                     <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pen fa-sm" style="color: gray"></i></button>
@@ -233,25 +242,23 @@
                                         <span>Classe 82</span>
                                     </div>  
                                 </th>                        
-                                <td class="d-none d-md-block">22 Feb 2021</td>
-                                <td class="d-none d-md-block">20%</td>
+                                <td><span class="d-none d-xl-block">15 Feb 2021</span></td>
+                                <td><span class="d-none d-xl-block">20%</span></td>
                                 <td><button type="button" class="btn btn-success px-2 py-0 ms_radius">Done</button></td>
                                 <td>
                                     <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-pen fa-sm" style="color: gray"></i></button>
                                     <button type="button" class="btn btn-outline-secondary"><i class="fa-solid fa-trash fa-sm" style="color: gray;"></i></button>
                                 </td>
-                              </tr>
-
-
-                             
+                              </tr>        
                             </tbody>
-                          </table>
+                          </table>       
                     </div>
 
-                    <!-- faq  -->
-                    <div class="faq border border-secondary m-2 mt-3 ms_radius ">
-                        <h2 class="tab-title p-2 ms_radius">F.A.Q.</h2>
+                    <!-- sezione faq -->
+                    <div class="faq tab-title ms_todo border border-secondary m-2 mt-3 ms_radius ">
+                        <h2 class=" p-2 ms_radius">F.A.Q.</h2>
                         <div class="accordion accordion-flush" id="accordionFlushExample">
+                            <!-- domanda  sullo studente  -->
                             <div class="accordion-item">
                               <h2 class="accordion-header" id="flush-headingOne">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
@@ -262,6 +269,7 @@
                                 <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
                               </div>
                             </div>
+                            <!-- domanda sull'account  -->
                             <div class="accordion-item">
                               <h2 class="accordion-header" id="flush-headingTwo">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
@@ -272,10 +280,11 @@
                                 <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
                               </div>
                             </div>
-                            <div class="accordion-item">
+                            <!-- domanda sulla dasc  -->
+                            <div class="accordion-item ms_radius">
                               <h2 class="accordion-header" id="flush-headingThree">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                                  Posso usare questa dashbord da mobile?
+                                  Posso usare questa dasc
                                 </button>
                               </h2>
                               <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
@@ -284,18 +293,64 @@
                             </div>
                           </div>
                     </div>
-                </section>
-
-                <section>
 
                 </section>
 
+                <!-- todo e grafico -->
 
+                <section class="todo-graphics col-xl-5">
+
+                    <!-- todo  -->
+                    <div class=" border border-secondary m-2 mt-3 ms_radius ">
+                        <h2 class=" p-2 ms_radius tab-title ms_todo">Todo</h2>
+                        <!-- checks  -->
+                        <div class="border border-secondary m-3">
+                            <div class="form-check m-3 ms_todo">
+                                <input class="form-check-input" type="checkbox" value="" id="flex-">
+                                <label class="form-check-label" for="flex-">
+                               Kickoff nuove classi
+                                </label>
+                            </div>
+                            <div class="form-check m-3 ms_todo ">
+                                <input class="form-check-input" type="checkbox" value="" id="Check-">
+                                <label class="form-check-label" for="Check-">
+                                Lezione su bootstrap 5 in classe#75
+                                </label>
+                            </div>
+                            <div class="form-check m-3 ms_todo">
+                                <input class="form-check-input" type="checkbox" value="" id="Default-">
+                                <label class="form-check-label" for="Default-">
+                                Controllare username github studenti
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- grafico  -->
+                    <div class="graphics border border-secondary mx-2 mt-3 ms_radius">
+                        <div class="border border-secondary m-3 ms_radius">
+                            <div class="ms_todo">
+                                <!-- grafico -->
+                                <img src="img/stats.jpeg" alt="img">
+                                <span class="fs-4">Utenti attivi</span>
+                                <p class="ms_mini-text ">Lista degli ultimi utenti attivi in piattaforma nell' ultimo mese</p>
+                            </div>
+                            <!-- mesi -->
+                            <ul class="list-group">
+                                <li class="list-group-item ps-1 py-0"><span class="ms_mini-text px-0 ">Gennaio: 1200</span></li>
+                                <li class="list-group-item ps-1 py-0"><span class="ms_mini-text px-0 ">Febbraio: 800</span></li>
+                                <li class="list-group-item ps-1 py-0"><span class="ms_mini-text px-0 ">Marzo: 1500</span></li>
+                            </ul>
+                            <!-- link -->
+                            <div class="py-2 ps-1">
+                                <a href=""><span class="ms_mini-text ">Visualizza report approfondito</span></a>
+                            </div>                           
+                        </div>
+                    </div>
+                </section>
+                </div>
             </main>
-        </section>
-
-        
-
+        </div>
     </div>
 </body>
 </html>
