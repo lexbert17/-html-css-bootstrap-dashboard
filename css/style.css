@@ -48,7 +48,9 @@ header{
 .ms_search-bar{
     background-color: var(--primary-color);
 }
-
+.fa-lg{
+    line-height: 1.5rem;
+}
 .bonus{
     position: relative;
 }
