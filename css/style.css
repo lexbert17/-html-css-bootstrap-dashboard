@@ -38,6 +38,7 @@ header{
     background-color: var(--primary-color);
     height: 40px;  
     flex-grow: 1;
+    border: none;
 }
 
 .ms_search:focus {
